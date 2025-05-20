@@ -1,0 +1,19 @@
+{
+  "name": "adeo-node-filter",
+  "version": "1.0.0",
+  "description": "Code proposal to solve filter javascript problem for adeo use case",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'test'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sidlynx/adeo-node-filter.git"
+  },
+  "author": "Mohammed Hamdoune <sidlynx@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sidlynx/adeo-node-filter/issues"
+  },
+  "homepage": "https://github.com/sidlynx/adeo-node-filter#readme"
+}
