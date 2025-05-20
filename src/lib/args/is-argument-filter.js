@@ -1,0 +1,1 @@
+export const isArgumentFilter = (arg)=> arg.startsWith('--filter=') && arg.split("=").length >= 2;
