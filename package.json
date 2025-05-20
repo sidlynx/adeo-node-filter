@@ -4,7 +4,8 @@
   "description": "Code proposal to solve filter javascript problem for adeo use case",
   "main": "index.js",
   "scripts": {
-    "test": "echo 'test'"
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/sidlynx/adeo-node-filter/issues"
   },
-  "homepage": "https://github.com/sidlynx/adeo-node-filter#readme"
+  "homepage": "https://github.com/sidlynx/adeo-node-filter#readme",
+  "devDependencies": {
+    "vitest": "^3.1.4"
+  }
 }
