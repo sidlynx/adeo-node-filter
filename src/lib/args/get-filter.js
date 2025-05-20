@@ -1,0 +1,1 @@
+export const getFilter = (arg)=> arg.split("=").splice(1).join("=");
