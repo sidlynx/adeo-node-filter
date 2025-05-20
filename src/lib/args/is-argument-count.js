@@ -1,0 +1,1 @@
+export const isArgumentCount = (arg)=> arg === '--count';
