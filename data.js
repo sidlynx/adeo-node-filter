@@ -1,4 +1,4 @@
-const data = [{
+export const countries = [{
   name: 'Dillauti',
   people:
     [{
@@ -368,7 +368,3 @@ const data = [{
         }]
   }
 ]
-
-module.exports = {
-  data
-}
