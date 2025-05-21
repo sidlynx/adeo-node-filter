@@ -1,16 +1,9 @@
-# Javascript developer test
+# Javascript test solution proposal
 
-## Filter
+## Solution
+The program proposes the two main functionalities, please refer to [the task description](/TASK.md) for more context
 
-Your job is to write a command-line interface in Node.js. 
-This program has to filter a list of elements containing a pattern.
-
-Details:
-- In the following file `data.js`, there are `Countries` containing `Peoples` containing `Animals`.
-- Only animals containing the pattern passed as argument (e.g. `ry`) are displayed. The order should be kept intact.
-- Empty array after filtering are NOT returned.
-
-Sample of running the command, and its output:
+Sample of running the commands, and their output:
 
 ```shell script
 $ node app.js --filter=ry
@@ -44,12 +37,6 @@ $ node app.js --filter=ry
 ]
 ```
 
-## Count
-
-The next goal is to print the counts of People and Animals by counting the number of children and appending it in the name, eg. `Satanwi [2]`.
-
-Sample of running the command, and its output:
-
 ```shell script
 node app.js --count
 [ { name: 'Dillauti [5]',
@@ -77,14 +64,12 @@ node app.js --count
 ]
 ```
 
-## Requirements
+## Disclaimer
 
-- The code must be available in a GIT repository
-- No library/modules should be used, except for the testing library
-
-## Appreciation
-
-We will be really attentive to:
-
-- Code readability, structure and consistency
-- Tests, and how they are written
+- No external library was added except for vitest to run unit tests
+- The project type is "module", for vitest sake, since vitest runs by default in esm, commonjs can still be used but using default exports only, we can't use named exports, i could use jest or mocha/chai duo or native node testing module bu I find vitest more complete and conveniant
+- To keep things simple, the program use always the data file in the root as source of data, I could have changed that to read it from parameters but I preferred to keep things as simple as possible
+- The filter functionnality looks for the filter as a "string", i could have changed that to regular expression but that wasn't mentionned anywhere
+- For clarity sake i put every single function in its own file, with an other file containing its own unit tests
+- If the program is used the wrong way, a message will appear to explain how to use it
+- If the program is intentionally msiused, and I point here the case where a user changes the arguments programmatically, the program will throw an error
