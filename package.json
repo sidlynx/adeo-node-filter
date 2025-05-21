@@ -2,7 +2,7 @@
   "name": "adeo-node-filter",
   "version": "1.0.0",
   "description": "Code proposal to solve filter javascript problem for adeo use case",
-  "main": "src/index.js",
+  "main": "src/app.js",
   "type": "module",
   "scripts": {
     "test": "vitest run",
